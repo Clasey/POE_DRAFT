@@ -8,8 +8,13 @@ namespace POE_DRAFT_1
 {
     class Program
     {
+        // Main Program run the classes.
         static void main(string [] args)
         {
+            // Initialize varibles
+            int ingredientCount;
+            int stepCount;
+            Recipe recipe;
 
         }
        
