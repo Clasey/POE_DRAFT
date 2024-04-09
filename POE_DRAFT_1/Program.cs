@@ -34,6 +34,13 @@ namespace POE_DRAFT_1
             // Array to store ingredients entered.
             private Ingredient[] ingredients;
             private string[] steps;
+
+            //Constuctor to initialize a recipe object with given ingredients.
+            public Recipe(int ingredientCount, int stepCount)
+            {
+                ingredients = new Ingredient[ingredientCount];
+                steps = new string[stepCount];
+            }
         }
     }
 }
