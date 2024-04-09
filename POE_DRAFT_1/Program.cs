@@ -49,8 +49,8 @@ namespace POE_DRAFT_1
                 Console.Write("Unit: ");
                 string unit = Console.ReadLine();
 
-               
-
+                // Ingredient object to add to recipe
+                recipe.AddIngredient(i, new Ingredient(name, quantity, unit));
             }
         }
        
