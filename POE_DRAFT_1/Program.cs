@@ -60,6 +60,9 @@ namespace POE_DRAFT_1
                 string step = Console.ReadLine();
                 recipe.AddStep(i, step);
             }
+
+            // Recipe display
+            recipe.DisplayRecipe();
         }
        
         public class Ingredient
