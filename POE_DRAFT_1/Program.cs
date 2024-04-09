@@ -76,6 +76,11 @@ namespace POE_DRAFT_1
             recipe.ScaleRecipe(factor);
             recipe.DisplayRecipe();
 
+            // Clear recipe
+            recipe.ClearRecipe();
+            Console.WriteLine("Recipe cleared.");
+
+            Console.ReadLine();
 
         }
        
