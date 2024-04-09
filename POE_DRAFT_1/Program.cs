@@ -29,6 +29,9 @@ namespace POE_DRAFT_1
                 Console.WriteLine("Please enter valid number of steps: ");
             }
 
+            // A new Recipe object
+            recipe = new Recipe(ingredientCount, stepCount);
+
 
         }
        
