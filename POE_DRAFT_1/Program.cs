@@ -84,7 +84,14 @@ namespace POE_DRAFT_1
                 }
             }
 
-         
+            // Method to scale the recipe by factor
+            public void ScaleRecipe(double factor)
+            {
+                foreach (var ingredient in ingredients)
+                {
+                    ingredient.Quantity *= factor;
+                }
+            }
         }
     }
 }
