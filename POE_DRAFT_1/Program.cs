@@ -16,6 +16,10 @@ namespace POE_DRAFT_1
             int stepCount;
             Recipe recipe;
 
+            // Prompts to get ingredients
+            Console.WriteLine("Enter number of Ingredients: ");
+
+
         }
        
         public class Ingredient
