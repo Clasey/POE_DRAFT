@@ -98,6 +98,13 @@ namespace POE_DRAFT_1
             {
 
             }
+
+            // Method to clear the recipe data entered.
+            public void ClearRecipe()
+            {
+                ingredients = new Ingredient[ingredients.Length];
+                steps = new string[steps.Length];
+            }
         }
     }
 }
