@@ -9,8 +9,9 @@ namespace POE_DRAFT_1
     class Program
     {
         // Main Program run the classes.
-        static void main(string [] args)
+        static void Main(string [] args)
         {
+            Console.WriteLine("Hello, world");
             // Initialize varibles
             int ingredientCount;
             int stepCount;
