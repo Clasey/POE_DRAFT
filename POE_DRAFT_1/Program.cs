@@ -54,6 +54,19 @@ namespace POE_DRAFT_1
                     Console.WriteLine("Invalid Input for adding ingredient");
                 }
             }
+
+            // Method to add steps to the recipe
+            public void AddStep(int index, string step)
+            {
+                if (index >= 0 && index < steps.Length)
+                {
+                    steps[index] = step;
+                }
+                else
+                {
+                    Console.WriteLine("Invalid Input for adding a step");
+                }
+            }
         }
     }
 }
