@@ -16,8 +16,18 @@ namespace POE_DRAFT_1
             int stepCount;
             Recipe recipe;
 
-            // Prompts to get ingredients
+            // Prompts to get ingredients and steps
             Console.WriteLine("Enter number of Ingredients: ");
+            while (!int.TryParse(Console.ReadLine(), out ingredientCount) || ingredientCount <= 0)
+            {
+                Console.WriteLine("Please enter valid number of ingredients: ");
+            }
+
+            Console.WriteLine("Enter number of steps: ");
+            while (!int.TryParse(Console.ReadLine(), out stepCount) || stepCount <= 0)
+            {
+                Console.WriteLine("Please enter valid number of steps: ");
+            }
 
 
         }
