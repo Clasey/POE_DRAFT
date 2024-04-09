@@ -77,7 +77,14 @@ namespace POE_DRAFT_1
                 {
                     Console.WriteLine($"{ingredient.Quantity}{ingredient.Unit} of {ingredient.Name}");
                 }
+                Console.WriteLine("Steps: ");
+                for (int i = 0; i < steps.Length; i++)
+                {
+                    Console.WriteLine($"{i + 1}. {steps[i]}");
+                }
             }
+
+         
         }
     }
 }
