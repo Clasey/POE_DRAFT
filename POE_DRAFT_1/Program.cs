@@ -28,5 +28,10 @@ namespace POE_DRAFT_1
                 Unit = unit;
             }
         }
+
+        public class Recipe
+        {
+
+        }
     }
 }
