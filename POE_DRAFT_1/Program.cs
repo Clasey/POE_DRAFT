@@ -12,5 +12,10 @@ namespace POE_DRAFT_1
         {
 
         }
+       
+        public class Ingredient
+        {
+
+        }
     }
 }
