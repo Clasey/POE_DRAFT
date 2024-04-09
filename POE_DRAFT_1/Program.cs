@@ -52,6 +52,9 @@ namespace POE_DRAFT_1
                 // Ingredient object to add to recipe
                 recipe.AddIngredient(i, new Ingredient(name, quantity, unit));
             }
+
+            // Prompts to enter steps
+
         }
        
         public class Ingredient
