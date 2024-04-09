@@ -31,7 +31,9 @@ namespace POE_DRAFT_1
 
         public class Recipe
         {
-
+            // Array to store ingredients entered.
+            private Ingredient[] ingredients;
+            private string[] steps;
         }
     }
 }
