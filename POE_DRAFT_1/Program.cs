@@ -41,6 +41,19 @@ namespace POE_DRAFT_1
                 ingredients = new Ingredient[ingredientCount];
                 steps = new string[stepCount];
             }
+
+            // Method to add an ingredient to the recipe
+            public void AddIngredient(int index, Ingredient ingredient)
+            {
+                if (index >= 0 && index < ingredients.Length)
+                {
+                    ingredients[index] = ingredient;
+                }
+                else
+                {
+                    Console.WriteLine("Invalid Input for adding ingredient");
+                }
+            }
         }
     }
 }
