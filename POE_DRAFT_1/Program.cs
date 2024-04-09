@@ -92,6 +92,12 @@ namespace POE_DRAFT_1
                     ingredient.Quantity *= factor;
                 }
             }
+
+            // Method to Reset the ingredient Quanties to original values
+            public void ResetQuantities()
+            {
+
+            }
         }
     }
 }
