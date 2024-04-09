@@ -63,6 +63,20 @@ namespace POE_DRAFT_1
 
             // Recipe display
             recipe.DisplayRecipe();
+
+            // Scaling the recipe
+            Console.WriteLine("Enter scaling factor (0.5 for half, 2 for double, 3 for triple:");
+            double factor;
+            while(!double.TryParse(Console.ReadLine(), out factor) || (factor != 0.5 && factor != 2 && factor !=3))
+            {
+                Console.WriteLine("Please  enter a valid factor: ");
+            }
+
+            // Reset quantities
+            recipe.ScaleRecipe(factor);
+            recipe.DisplayRecipe();
+
+
         }
        
         public class Ingredient
