@@ -33,7 +33,25 @@ namespace POE_DRAFT_1
             recipe = new Recipe(ingredientCount, stepCount);
 
             // Prompts to enter ingredients
+            for(int i = 0; i < ingredientCount; i++)
+            {
+                Console.WriteLine($"Enter name of ingredient: {i + 1}: ");
+                Console.Write("Name: ");
+                string name = Console.ReadLine();
 
+                Console.WriteLine($"Enter name of Quantity: {i + 1}: ");
+                double quantity;
+                while(!double.TryParse(Console.ReadLine(), out quantity) || quantity <= 0)
+                {
+                    Console.WriteLine("Please a valid number: ");
+                }
+
+                Console.Write("Unit: ");
+                string unit = Console.ReadLine();
+
+               
+
+            }
         }
        
         public class Ingredient
