@@ -54,7 +54,12 @@ namespace POE_DRAFT_1
             }
 
             // Prompts to enter steps
-
+            for(int i = 0; i < stepCount; i++)
+            {
+                Console.WriteLine($"Enter step {i + 1}:");
+                string step = Console.ReadLine();
+                recipe.AddStep(i, step);
+            }
         }
        
         public class Ingredient
