@@ -67,6 +67,17 @@ namespace POE_DRAFT_1
                     Console.WriteLine("Invalid Input for adding a step");
                 }
             }
+
+            // Method to display recipe
+            public void DisplayRecipe()
+            {
+                Console.Write("Recipe: ");
+                Console.Write("Ingredients: ");
+                foreach (var ingredient in ingredients)
+                {
+                    Console.WriteLine($"{ingredient.Quantity}{ingredient.Unit} of {ingredient.Name}");
+                }
+            }
         }
     }
 }
