@@ -167,7 +167,7 @@ namespace POE_DRAFT_1
             // Method to Reset the ingredient Quanties to original values
             public void ResetQuantities()
             {
-
+                // Dispaly the original values stored.
             }
 
             // Method to clear the recipe data entered.
